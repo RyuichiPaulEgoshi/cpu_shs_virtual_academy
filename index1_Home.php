@@ -14,7 +14,7 @@
     <div class="nav-container">
         <ul>
             <li><a href="#"><i class="material-icons">home</i></a></li>
-            <li><a href="#"><i class="material-icons">person_outline</i></a></li>
+            <li><a href="#"><img src="pics/_ex_profile_pi.jpg"></a></li>
             <li><a href="#"><i class="material-icons">person_outline</i></a></li>
             <li><a href="#"><i class="material-icons">school</i></a></li>
             <li id="down-item"><a href="#"><i class="material-icons">settings</i></a></li>
