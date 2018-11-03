@@ -14,9 +14,22 @@
     <div class="nav-container">
         <ul>
             <li><a href="#"><i class="material-icons">home</i></a></li>
-            <li><a href="#"><i class="material-icons">person_outline</i></a></li>
-            <li><a href="#"><i class="material-icons">school</i></a></li>
+            <li><i class="material-icons">person_outline</i></li>
+            <li><i class="material-icons">school</i></li>
             <li id="down-item"><a href="#"><i class="material-icons">settings</i></a></li>
+        </ul>
+    </div>
+    <!--Sub Navigation Bars-->
+    <div class="acc-nav">
+        <div class="accstatus-container">
+            <img src="#" alt="profile">
+            <h1>Ryuichi Paul Egoshi</h1>
+        </div>
+        <ul>
+            <li><a href="#">View Your Account</a></li>
+            <li><a href="#">Edit Account</a></li>
+            <li><a href="#">View Classmate</a></li>
+            <li><a href="#">Log Out</a></li>
         </ul>
     </div>
 
