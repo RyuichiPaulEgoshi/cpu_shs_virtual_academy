@@ -29,11 +29,6 @@ body{
     padding: 5px;
 }
 
-.nav-container img{
-    height: 30px;
-    width: 30px;
-}
-
 #down-item{
     position: absolute;  
     bottom: 40px; 
