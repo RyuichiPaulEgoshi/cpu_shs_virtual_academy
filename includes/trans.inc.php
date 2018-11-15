@@ -18,6 +18,17 @@ switch (true) {
     case (isset($_POST[''])):
         break;
 
+    #4
+    case (isset($_POST[''])):
+        break;
+    
+    #5
+    case (isset($_POST[''])):
+        break;
+    
+    #6
+    case (isset($_POST[''])):
+        break;
     #error
     default:
         # code...

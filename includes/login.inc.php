@@ -5,7 +5,7 @@ session_start();
 include 'db.inc.php';
 
 function account(
-    
+
 )
 
 switch (true) {
@@ -28,5 +28,9 @@ switch (true) {
     
     #System Error
     default:
+        echo "<script>
+        alert('Error!');
+        window.history.back();
+        </script>";
         break;
 }
