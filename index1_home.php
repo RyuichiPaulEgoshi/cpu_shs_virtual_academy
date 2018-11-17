@@ -11,7 +11,7 @@
 <body>
     <!--Navigation-->
     <?php
-        include 'common/navadmi.com.php';
+        include 'common/nav.com.php';
     ?>
 
     <!--index-->
