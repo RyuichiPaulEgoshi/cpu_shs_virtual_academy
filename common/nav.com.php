@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 case (true):
 
     #admin account
@@ -31,7 +33,15 @@ case (true):
 
 ?>
 
+<?php
 
+    include 'includes/db.inc.php';
+
+    $sql = "";
+    $result = mysqli_query($conn, $sql);
+    while($row = mysqli_fetch_array($result)):;
+
+?>
 <!--Main Navigation Bars-->
 <div class="nav-container">
     <ul>
@@ -51,6 +61,10 @@ case (true):
         <li onmousemove="ShowNav7()"><a href="index7_help.php"><i class="material-icons">default</i></a></li>
     </ul>
 </div>
+
+<?php
+    endwhile;
+?>
 
 <!--Sub Navigation Bars-->
 
