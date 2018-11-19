@@ -31,6 +31,7 @@ case (true):
 
 ?>
 
+
 <!--Main Navigation Bars-->
 <div class="nav-container">
     <ul>
@@ -55,7 +56,6 @@ case (true):
 
 <!--Sub 1 Home-->
 <div id="nav1" class="nav1">
-    <h2>HOME</h2>
     <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
 
@@ -84,7 +84,7 @@ case (true):
     <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
 
-<!--Sub 7 Class-->
-<div id="nav3" class="nav3">
+<!--Sub 7 Help-->
+<div id="nav7" class="nav7">
     <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
