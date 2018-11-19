@@ -37,7 +37,7 @@ case (true):
 
     include 'includes/db.inc.php';
 
-    $sql = "";
+    $sql = "SELECT acc_omm, acc_href, acc_name FROM _access WHERE acc_par = 1";
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_array($result)):;
 
@@ -46,19 +46,7 @@ case (true):
 <div class="nav-container">
     <ul>
         <!--1 home-->
-        <li onmousemove="ShowNav1()"><a href="index1_home.php"><i class="material-icons">default</i></a></li>
-        <!--2 account-->
-        <li onmousemove="ShowNav2()"><a href="index2_account.php"><i class="material-icons">default</i></a></li>
-        <!--3 class-->
-        <li onmousemove="ShowNav3()"><a href="index3_class.php"><i class="material-icons">default</i></a></li>
-        <!--4 resources-->
-        <li onmousemove="ShowNav4()"><a href="index4_resources.php"><i class="material-icons">default</i></a></li>
-        <!--5 transaction-->
-        <li onmousemove="ShowNav5()"><a href="index5_transaction.php"><i class="material-icons">default</i></a></li>
-        <!--6 setting-->
-        <li onmousemove="ShowNav6()"><a href="index6_settng.php"><i class="material-icons">default</i></a></li>
-        <!--7 help-->
-        <li onmousemove="ShowNav7()"><a href="index7_help.php"><i class="material-icons">default</i></a></li>
+        <li onmousemove="<?php echo $row[0]; ?>"><a href="<?php echo $row[1]; ?>"><i class="material-icons"><?php echo $row[2]; ?></i></a></li>
     </ul>
 </div>
 
