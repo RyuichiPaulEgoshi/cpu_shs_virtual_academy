@@ -37,18 +37,17 @@ case (true):
         <!--1 home-->
         <li onmousemove="ShowNav1()"><a href="index1_home.php"><i class="material-icons">default</i></a></li>
         <!--2 account-->
-        <li onmousemove="ShowNav2()"><a href="#"><i class="material-icons">default</i></a></li>
+        <li onmousemove="ShowNav2()"><a href="index2_account.php"><i class="material-icons">default</i></a></li>
         <!--3 class-->
-        <li onmousemove="ShowNav3()"><a href="#"><i class="material-icons">default</i></a></li>
+        <li onmousemove="ShowNav3()"><a href="index3_class.php"><i class="material-icons">default</i></a></li>
         <!--4 resources-->
-        <li onmousemove="ShowNav4()"><a href="#"><i class="material-icons">default</i></a></li>
+        <li onmousemove="ShowNav4()"><a href="index4_resources.php"><i class="material-icons">default</i></a></li>
         <!--5 transaction-->
-        <li onmousemove="ShowNav5()"><a href="#"><i class="material-icons">default</i></a></li>
+        <li onmousemove="ShowNav5()"><a href="index5_transaction.php"><i class="material-icons">default</i></a></li>
         <!--6 resources-->
-        <li onmousemove="ShowNav6()"><a href="#"><i class="material-icons">default</i></a></li>
+        <li onmousemove="ShowNav6()"><a href="index6_settng.php"><i class="material-icons">default</i></a></li>
         <!--7 settings-->
-        <li onmousemove="ShowNav7()"><a href="#"><i class="material-icons">default</i></a></li>
-        <li onmousemove="ShowNav8()"><a href="#"><i class="material-icons">default</i></a></li>
+        <li onmousemove="ShowNav7()"><a href="index7_help.php"><i class="material-icons">default</i></a></li>
     </ul>
 </div>
 
