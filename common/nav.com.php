@@ -66,12 +66,12 @@ case (true):
     <?php
         include 'includes/db.inc.php';
 
-        $sql1 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 4";
+        $sql1 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 3";
         $result1 = mysqli_query($conn, $sql1);
         while($row1 = mysqli_fetch_array($result1)):;
     ?>
     <ul>
-        <li><a href="<?php echo $row[0]; ?>"><i class="material-icons"></i><?php echo $row[0]; ?></a></li>
+        <li><a href="<?php echo $row[0]; ?>"><i class="material-icons"><?php echo $row[1]; ?></i><?php echo $row[2]; ?></a></li>
     </ul>
     <?php
         endwhile;
@@ -89,7 +89,7 @@ case (true):
         while($row1 = mysqli_fetch_array($result1)):;
     ?>
     <ul>
-        <li><a href="<?php echo $row[0]; ?>"><i class="material-icons"></i><?php echo $row[0]; ?></a></li>
+        <li><a href="<?php echo $row[0]; ?>"><i class="material-icons"><?php echo $row[1]; ?></i><?php echo $row[2]; ?></a></li>
     </ul>
     <?php
         endwhile;
