@@ -8,3 +8,45 @@ body{
     font-family: 'Century Gothic';
 }
 
+/*Main Navigation*/
+
+.nav-container{
+    background-color: #311b92;
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    float: left;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 4px #263238;
+    z-index: 2;
+}
+
+.nav-container ul{
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 5px;
+}
+
+.nav-container li{
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#down-item{
+    position: absolute;  
+    bottom: 40px; 
+    float: right;
+}
+
+.nav-container i{
+    color:#eceff1;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.nav-container li:hover{
+    background-color: #7e57c2;
+}
+
+/*Sub Navigation*/
