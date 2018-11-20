@@ -49,7 +49,6 @@ case (true):
         <li onmousemove="<?php echo $row[0]; ?>"><a href="<?php echo $row[1]; ?>"><i class="material-icons"><?php echo $row[2]; ?></i></a></li>
     </ul>
 </div>
-
 <?php
     endwhile;
 ?>
