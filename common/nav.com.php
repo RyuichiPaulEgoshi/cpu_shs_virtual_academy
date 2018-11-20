@@ -37,7 +37,7 @@ case (true):
 
     include 'includes/db.inc.php';
 
-    $sql = "SELECT acc_omm, acc_href, acc_name FROM _access WHERE acc_par = 1";
+    $sql = "SELECT acc_omm, acc_href, acc_icon FROM _access WHERE acc_par = 1";
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_array($result)):;
 
@@ -63,6 +63,19 @@ case (true):
 
 <!--Sub 2 Account-->
 <div id="nav2" class="nav2">
+    <?php
+        include 'includes/db.inc.php';
+
+        $sql1 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 4";
+        $result1 = mysqli_query($conn, $sql1);
+        while($row1 = mysqli_fetch_array($result1)):;
+    ?>
+    <ul>
+        <li><a href="<?php echo $row[0]; ?>"><i class="material-icons"></i><?php echo $row[0]; ?></a></li>
+    </ul>
+    <?php
+        endwhile;
+    ?>
     <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
 
@@ -71,11 +84,13 @@ case (true):
     <?php
         include 'includes/db.inc.php';
 
-        $sql1 = "SELECT acc_href, acc_omm, acc_name FROM _access WHERE acc_par = 3";
+        $sql1 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 4";
         $result1 = mysqli_query($conn, $sql1);
         while($row1 = mysqli_fetch_array($result1)):;
     ?>
-    
+    <ul>
+        <li><a href="<?php echo $row[0]; ?>"><i class="material-icons"></i><?php echo $row[0]; ?></a></li>
+    </ul>
     <?php
         endwhile;
     ?>
