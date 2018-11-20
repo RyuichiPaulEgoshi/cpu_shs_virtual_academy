@@ -63,6 +63,9 @@ case (true):
 
 <!--Sub 2 Account-->
 <div id="nav2" class="nav2">
+    <h2>ACCOUNT</h2>
+    <h1>Ryuichi Paul Egoshi</h1>
+    <a href="3Account/2.1viewacc.php"><img src=""></a>
     <?php
         include 'includes/db.inc.php';
 
