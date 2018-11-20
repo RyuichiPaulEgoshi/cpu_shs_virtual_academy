@@ -62,19 +62,22 @@ case (true):
 </div>
 
 <!--Sub 2 Account-->
+<?php
+    include 'includes/db.inc.php';
+?>
 <div id="nav2" class="nav2">
     <h2>ACCOUNT</h2>
-    <h1>Ryuichi Paul Egoshi</h1>
+    <h1></h1>
     <a href="3Account/2.1viewacc.php"><img src=""></a>
     <?php
         include 'includes/db.inc.php';
 
-        $sql1 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 3";
-        $result1 = mysqli_query($conn, $sql1);
-        while($row1 = mysqli_fetch_array($result1)):;
+        $sql2 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 3";
+        $result2 = mysqli_query($conn, $sql2);
+        while($row2 = mysqli_fetch_array($result2)):;
     ?>
     <ul>
-        <li><a href="<?php echo $row[0]; ?>"><i class="material-icons"><?php echo $row[1]; ?></i><?php echo $row[2]; ?></a></li>
+        <li><a href="<?php echo $row2[0]; ?>"><i class="material-icons"><?php echo $row2[1]; ?></i><?php echo $row2[2]; ?></a></li>
     </ul>
     <?php
         endwhile;
@@ -87,12 +90,12 @@ case (true):
     <?php
         include 'includes/db.inc.php';
 
-        $sql1 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 4";
-        $result1 = mysqli_query($conn, $sql1);
-        while($row1 = mysqli_fetch_array($result1)):;
+        $sql3 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 4";
+        $result3 = mysqli_query($conn, $sql3);
+        while($row3 = mysqli_fetch_array($result3)):;
     ?>
     <ul>
-        <li><a href="<?php echo $row[0]; ?>"><i class="material-icons"><?php echo $row[1]; ?></i><?php echo $row[2]; ?></a></li>
+        <li><a href="<?php echo $row3[0]; ?>"><i class="material-icons"><?php echo $row3[1]; ?></i><?php echo $row3[2]; ?></a></li>
     </ul>
     <?php
         endwhile;
