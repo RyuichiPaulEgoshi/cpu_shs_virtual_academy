@@ -268,7 +268,142 @@ body{
     height: 100%;
     margin-left: 50px;
 }
+
 /*Nav4*/
+.nav4{
+    background-color: #512da8;
+    top: 173px;
+    left: -350px;
+    width: 280px;
+    height: auto;
+    position: fixed;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 20px; 
+    text-align: left;
+    text-decoration-line: none;
+    text-shadow: 2px 2px 4px #263238;
+    z-index: 1;
+    transition: all ease-in-out 300ms;
+}
+
+.nav4 h2{
+    color: #d1c4e9;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 0 auto;
+    font-size: 15px;
+}
+
+.nav4 ul{
+    list-style-type: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.nav4 li{
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.nav4 i{
+    padding-right: 10px;
+}
+
+.nav4 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #d1c4e9;
+}
+
+.nav4 li:hover{
+    background-color: #5c6bc0;
+}
+
+.nav4 a:hover{
+    font-size: 20px;
+    color: white;
+}
+
 /*Nav5*/
+.nav5{
+    background-color: #512da8;
+    top: 215px;
+    left: -350px;
+    width: 280px;
+    height: auto;
+    position: fixed;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 20px; 
+    text-align: left;
+    text-decoration-line: none;
+    text-shadow: 2px 2px 4px #263238;
+    z-index: 1;
+    transition: all ease-in-out 300ms;
+}
+
+.nav5 h2{
+    color: #d1c4e9;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 0 auto;
+    font-size: 15px;
+}
+
+#closeNav{
+    color: #d1c4e9;
+    width: 100%;
+    height: auto;
+    padding: 0 auto;
+    font-size: px;
+    text-align: right;
+    text-decoration: none;
+}
 /*Nav6*/
+.nav6{
+    background-color: #512da8;
+    top: 215px;
+    left: -350px;
+    width: 280px;
+    height: auto;
+    position: fixed;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 20px; 
+    text-align: left;
+    text-decoration-line: none;
+    text-shadow: 2px 2px 4px #263238;
+    z-index: 1;
+    transition: all ease-in-out 300ms;
+}
+
+.nav6 h2{
+    color: #d1c4e9;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 0 auto;
+    font-size: 15px;
+}
+
+#closeNav{
+    color: #d1c4e9;
+    width: 100%;
+    height: auto;
+    padding: 0 auto;
+    font-size: px;
+    text-align: right;
+    text-decoration: none;
+}
 /*Nav7*/
