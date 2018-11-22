@@ -44,10 +44,15 @@ body{
 }
 
 /*Sub Navigation*/
-/*Nav1*/
-.nav1{
+/*Nav1-7 common*/
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5,
+.nav6,
+.nav7{
     background-color: #512da8;
-    top: 35px;
     left: -350px;
     width: 250px;
     height: auto;
@@ -64,7 +69,13 @@ body{
     transition: all ease-in-out 300ms;
 }
 
-.nav1 h2{
+.nav1 h2,
+.nav2 h2,
+.nav3 h2,
+.nav4 h2,
+.nav5 h2,
+.nav6 h2,
+.nav7 h2{
     color: #d1c4e9;
     width: 100%;
     height: auto;
@@ -73,37 +84,45 @@ body{
     font-size: 15px;
 }
 
-
-/*Nav2*/
-.nav2{
-    background-color: #512da8;
-    top: 80px;
-    left: -350px;
-    width: 280px;
-    max-height: 480px;
-    position: fixed;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 20px; 
-    text-align: left;
-    text-decoration-line: none;
-    text-shadow: 2px 2px 4px #263238;
-    z-index: 1;
-    transition: all ease-in-out 300ms;
-    overflow-y: auto;
+/*Nav2,3 common*/
+.nav2 ul,
+.nav3 ul{
+    list-style-type: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
 }
 
-.nav2 h2{
+.nav2 li,
+.nav3 li{
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.nav2 i,
+.nav3 i{
+    padding-right: 10px;
+}
+
+.nav2 a,
+.nav3 a{
+    text-decoration: none;
+    font-size: 18px;
     color: #d1c4e9;
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding: 0 auto;
-    font-size: 15px;
 }
 
+.nav2 li:hover,
+.nav3 li:hover{
+    background-color: #7e57c2;
+}
+
+.nav2 a:hover,
+.nav3 a:hover{
+    font-size: 20px;
+    color: white;
+}
+
+/*Specefic styles*/
 .nav2 h1{
     color: whitesmoke;
     border-bottom: solid 4px #d1c4e9;
@@ -125,115 +144,16 @@ body{
     box-shadow: 0 4px 8px 0 #263238;
 }
 
-.nav2 ul{
-    list-style-type: none;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 0;
-}
-
-.nav2 li{
-    margin: 0 auto;
-    text-decoration: none;
-}
-
-.nav2 i{
-    padding-right: 10px;
-}
-
-.nav2 a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #d1c4e9;
-}
-
 .nav2 img:hover{
     width: 197px;
     border: 2px solid whitesmoke;
 }
 
-.nav2 li:hover{
-    background-color: #7e57c2;
-}
 
-.nav2 a:hover{
-    font-size: 20px;
-    color: white;
-}
 
 #logout{
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-/*Nav3*/
-.nav{
-    background-color: #512da8;
-    top: 130px;
-    left: -350px;
-    max-height: 450px;
-    width: 280px;
-    position: fixed;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 20px; 
-    text-align: left;
-    text-decoration-line: none;
-    text-shadow: 2px 2px 4px #263238;
-    z-index: 1;
-    transition: all ease-in-out 300ms;
-    overflow-y: auto;
-}
-
-.nav h2{
-    color: #d1c4e9;
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding: 0 auto;
-    font-size: 15px;
-}
-
-.nav ul{
-    list-style-type: none;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.nav img{
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    margin-left: 10px;
-    box-shadow: 0 4px 8px 0 #263238;
-}
-
-.nav li{
-    margin: 0 auto;
-    text-decoration: none;
-}
-
-.nav i{
-    padding-right: 10px;
-}
-
-.nav a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #d1c4e9;
-}
-
-.nav li:hover{
-    background-color: #5c6bc0;
-}
-
-.nav a:hover{
-    font-size: 20px;
-    color: white;
 }
 
 .takclas{
@@ -269,95 +189,6 @@ body{
     margin-left: 50px;
 }
 
-/*Nav4*/
-.nav4{
-    background-color: #512da8;
-    top: 173px;
-    left: -350px;
-    width: 280px;
-    height: auto;
-    position: fixed;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 20px; 
-    text-align: left;
-    text-decoration-line: none;
-    text-shadow: 2px 2px 4px #263238;
-    z-index: 1;
-    transition: all ease-in-out 300ms;
-}
-
-.nav4 h2{
-    color: #d1c4e9;
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding: 0 auto;
-    font-size: 15px;
-}
-
-.nav4 ul{
-    list-style-type: none;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.nav4 li{
-    margin: 0 auto;
-    text-decoration: none;
-}
-
-.nav4 i{
-    padding-right: 10px;
-}
-
-.nav4 a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #d1c4e9;
-}
-
-.nav4 li:hover{
-    background-color: #5c6bc0;
-}
-
-.nav4 a:hover{
-    font-size: 20px;
-    color: white;
-}
-
-/*Nav5*/
-.nav5{
-    background-color: #512da8;
-    top: 215px;
-    left: -350px;
-    width: 280px;
-    height: auto;
-    position: fixed;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 20px; 
-    text-align: left;
-    text-decoration-line: none;
-    text-shadow: 2px 2px 4px #263238;
-    z-index: 1;
-    transition: all ease-in-out 300ms;
-}
-
-.nav5 h2{
-    color: #d1c4e9;
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding: 0 auto;
-    font-size: 15px;
-}
 
 #closeNav{
     color: #d1c4e9;
@@ -367,73 +198,6 @@ body{
     font-size: px;
     text-align: right;
     text-decoration: none;
-}
-/*Nav6*/
-.nav6{
-    background-color: #512da8;
-    top: 215px;
-    left: -350px;
-    width: 280px;
-    height: auto;
-    position: fixed;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 20px; 
-    text-align: left;
-    text-decoration-line: none;
-    text-shadow: 2px 2px 4px #263238;
-    z-index: 1;
-    transition: all ease-in-out 300ms;
-}
-
-.nav6 h2{
-    color: #d1c4e9;
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding: 0 auto;
-    font-size: 15px;
-}
-
-#closeNav{
-    color: #d1c4e9;
-    width: 100%;
-    height: auto;
-    padding: 0 auto;
-    font-size: px;
-    text-align: right;
-    text-decoration: none;
-}
-
-/*Nav7*/
-.nav7{
-    background-color: #512da8;
-    top: 215px;
-    left: -350px;
-    width: 280px;
-    height: auto;
-    position: fixed;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 20px; 
-    text-align: left;
-    text-decoration-line: none;
-    text-shadow: 2px 2px 4px #263238;
-    z-index: 1;
-    transition: all ease-in-out 300ms;
-}
-
-.nav7 h2{
-    color: #d1c4e9;
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding: 0 auto;
-    font-size: 15px;
 }
 
 /*icon*/
