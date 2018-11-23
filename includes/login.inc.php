@@ -2,35 +2,63 @@
 
 session_start();
 
-include 'db.inc.php';
+if(isset($_POST['login-submit'])){
 
-function account(
+    include 'db.inc.php';
 
-)
+    $uname = mysqli_real_escape_string($conn, $_POST['uname']);
+    $upass = mysqli_real_escape_string($conn, $_POST['upass']);
 
-switch (true) {
+    $sql = "";
+    $result = $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
+    $row = mysqli_fetch_assoc($result);
 
-    #Admin account
-    case (isset($_POST['stu-acc'])):
-        break;
-    
-    #Teacher account
-    case (isset($_POST['tea-acc'])):
-        break;
-    
-    #Student account
-    case (isset($_POST['stu-acc'])):
-        break;
+    switch (true) {
 
-    #Parent account
-    case (isset($_POST['par-acc'])):
-        break;
-    
-    #System Error
-    default:
-        echo "<script>
-        alert('Error!');
-        window.history.back();
-        </script>";
-        break;
+        #check empty
+        case (empty($uname) || empty($upass)):
+            break;
+        
+        #check user name and password
+        case ($reultCheck < 1):
+            break;
+        
+        #success
+        default:
+            switch (true) {
+
+                # active-admin
+                case ():
+                    break;
+
+                # active-teacher
+                case ():
+                    break;
+
+                # active-student
+                case ():
+                    break;
+                
+                # active-parent
+                case ():
+                    break;
+                
+                # passive accounts
+                case ():
+                    break;
+
+                #error
+                default:
+                    break;
+            }
+            break;
+    }
+
+} else{
+    echo "<script>
+    alert('Server Error!');
+    window.history.back();
+    </script>";
+    exit();
 }

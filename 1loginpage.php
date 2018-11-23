@@ -26,7 +26,7 @@
             <input type="text" name="uname" placeholder="First and Last Name / SchoolID">
             <p class="sub-title">PASSWORD</p>
             <input type="password" name="upass" placeholder="password"><br>
-            <button type="submit" name="submit">Log In</button><br>
+            <button type="submit" name="login-submit">Log In</button><br>
             <a href="#"><i class="material-icons">arrow_forward</i> Forgot Password</a><br>
             <a href="#"><i class="material-icons">arrow_forward</i> Create Account </a>
         </form>
