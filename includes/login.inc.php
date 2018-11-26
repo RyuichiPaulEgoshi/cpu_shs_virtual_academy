@@ -9,7 +9,7 @@ if(isset($_POST['login-submit'])){
     $uname = mysqli_real_escape_string($conn, $_POST['uname']);
     $upass = mysqli_real_escape_string($conn, $_POST['upass']);
 
-    $sql = "";
+    include '../common/dbscripts.com.php';
     $result = $result = mysqli_query($conn, $sql);
     $resultCheck = mysqli_num_rows($result);
     $row = mysqli_fetch_assoc($result);
