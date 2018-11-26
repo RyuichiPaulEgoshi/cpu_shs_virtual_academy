@@ -9,7 +9,7 @@ if(isset($_POST['login-submit'])){
     $uname = mysqli_real_escape_string($conn, $_POST['uname']);
     $upass = mysqli_real_escape_string($conn, $_POST['upass']);
 
-    include '../common/dbscripts.com.php';
+    $sql = '';
     $result = mysqli_query($conn, $sql);
     $resultCheck = mysqli_num_rows($result);
     $row = mysqli_fetch_assoc($result);
@@ -18,6 +18,10 @@ if(isset($_POST['login-submit'])){
 
         #check empty
         case (empty($uname) || empty($upass)):
+            echo "<script>
+            alert('You should not empty');
+            window.history.back();
+            </script>";
             break;
         
         #check user name and password
