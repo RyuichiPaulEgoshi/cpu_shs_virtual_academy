@@ -1,26 +1,36 @@
 <?php
 #This common part is for SQL
 
-#User Account
-$sql1 = '';
-$sql2 = '';
-$sql3 = '';
-$sql4 = '';
-$sql5 = '';
-$sql6 = '';
-$sql7 = '';
-$sql8 = '';
-$sql9 = '';
-$sql10 = '';
-$sql11 = '';
-$sql12 = '';
-$sql13 = '';
-$sql14 = '';
-$sql15 = '';
-$sql16 = '';
-$sql17 = '';
-$sql18 = '';
-$sql19 = '';
-$sql20 = '';
+#SELSECT
+$sql_s1 = '';
+$sql_s2 = '';
+$sql_s3 = '';
+$sql_s4 = '';
+$sql_s5 = '';
+$sql_s6 = '';
+$sql_s7 = '';
+$sql_s8 = '';
+$sql_s9 = '';
+$sql_s10 = '';
 
+#INSERT
+$sql_i1 = '';
+$sql_i2 = '';
+$sql_i3 = '';
+$sql_i4 = '';
+$sql_i5 = '';
+
+#UPDATE
+$sql_u1 = '';
+$sql_u2 = '';
+$sql_u3 = '';
+$sql_u4 = '';
+$sql_u5 = '';
+
+#DELETE
+$sql_d1 = '';
+$sql_d2 = '';
+$sql_d3 = '';
+$sql_d4 = '';
+$sql_d5 = '';
 
