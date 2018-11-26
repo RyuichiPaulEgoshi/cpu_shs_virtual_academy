@@ -9,7 +9,14 @@ if(isset($_POST['login-submit'])){
     $uname = mysqli_real_escape_string($conn, $_POST['uname']);
     $upass = mysqli_real_escape_string($conn, $_POST['upass']);
 
-    $sql = '';
+    $sql = 'SELECT CONCAT(_user.user_Fname, " ", _user.user_Lname) AS Name, _user.user_password, _status.status_name 
+    FROM _user
+    INNER JOIN _status
+    ON _user.status_id_fk = _status.status_id
+    WHERE 
+    (CONCAT(_user.user_Fname, " ", _user.user_Lname)  = '$uname')
+    AND
+    _user.user_password = '$upass';';
     $result = mysqli_query($conn, $sql);
     $resultCheck = mysqli_num_rows($result);
     $row = mysqli_fetch_assoc($result);
