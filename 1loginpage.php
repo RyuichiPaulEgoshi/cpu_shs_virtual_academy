@@ -21,10 +21,10 @@
             <div class="correct-container" id="correct-content">
                 <p></p>
             </div>
-            <p class="sub-title">NAME</p>
-            <input type="text" name="uname" placeholder="First and Last Name / SchoolID">
-            <p class="sub-title">PASSWORD</p>
-            <input type="password" name="upass" placeholder="password"><br>
+            <p class="sub-title">Name :</p>
+            <input type="text" name="uname" placeholder="First Last Name / School ID">
+            <p class="sub-title">Password :</p>
+            <input type="password" name="upass" placeholder="Password"><br>
             <button type="submit" name="login-submit">Log In</button><br>
             <a href="#"><i class="material-icons">arrow_forward</i> Forgot Password</a><br>
             <a href="#"><i class="material-icons">arrow_forward</i> Create Account </a>
