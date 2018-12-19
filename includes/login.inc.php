@@ -44,7 +44,7 @@ if(isset($_POST['login-submit'])){
             break;
         
         #success
-        case ($reultCheck = 1):
+        case ($reultCheck > 1):
                 echo 'Hello world'; 
                 /*switch (true) {
                     # admin-active
