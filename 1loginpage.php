@@ -26,8 +26,8 @@
             <p class="sub-title">Password :</p>
             <input type="password" name="upass" placeholder="Password"><br>
             <button type="submit" name="login-submit">Log In</button><br>
-            <a href="#"><i class="material-icons">arrow_forward</i> Forgot Password</a><br>
-            <a href="#"><i class="material-icons">arrow_forward</i> Create Account </a>
+            <a href="3Account/"><i class="material-icons">arrow_forward</i> Forgot Password</a><br>
+            <a href="3Account/"><i class="material-icons">arrow_forward</i> Create Account </a>
         </form>
     </div>
 </body>
