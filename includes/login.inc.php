@@ -36,7 +36,8 @@ if(isset($_POST['login-submit'])){
             break;
         
         #check user name and password
-        case ($reultCheck < 1):
+        #if name / password is not exist in database
+        case ($reultCheck <= 1):
             echo "<script>
             alert('Your input(s) is(are) wrong');
             window.history.back();
@@ -44,7 +45,7 @@ if(isset($_POST['login-submit'])){
             break;
         
         #success
-        case ($reultCheck > 1):
+        case ($reultCheck >= 1):
                 echo 'Hello world'; 
                 /*switch (true) {
                     # admin-active
