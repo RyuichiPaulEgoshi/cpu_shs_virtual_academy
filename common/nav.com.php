@@ -2,39 +2,6 @@
 
 session_start();
 
-case (true):
-
-    #admin account
-    case (isset($_POST['admin-acc'])):
-
-    break;
-
-    #teacher account
-    case (isset($_POST['teacher-acc'])):
-    break;
-
-    #stuent account
-    case (isset($_POST['student-acc'])):
-    break;
-
-    #parent account
-    case (isset($_POST['parent-acc'])):
-    break;
-
-    #error
-    default:
-
-    # code...
-    echo "<script>
-    alert('System Error!!');
-    window.history.back();
-    </script>";
-    break;
-
-?>
-
-<?php
-
     include 'includes/db.inc.php';
 
     $sql = "SELECT acc_omm, acc_href, acc_icon FROM _access WHERE acc_par = 1";

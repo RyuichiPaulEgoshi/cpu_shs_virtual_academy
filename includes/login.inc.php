@@ -25,6 +25,9 @@ if(isset($_POST['login-submit'])){
     $status = $row['status_name'];
     $FullName = $row['Name'];
 
+    #paste to home page
+    $_SESSION['u_id'] = $row['_user_id'];
+
     switch (true) {
 
         #check empty
