@@ -34,58 +34,10 @@ if(isset($_POST['login-submit'])){
             window.history.back();
             </script>";
             break;
-        
-        /*
+
         #check user name and password
         #if name / password is not exist in database
-        case ($reultCheck < 1):
-            echo "<script>
-            alert('Your input(s) is(are) wrong');
-            window.history.back();
-            </script>";
-            break;
-        
-        
-        #success
-        case ($reultCheck = 1):
-                echo 'Hello world'; 
-                switch (true) {
-                    # admin-active
-                    case ($status == "admin-active"):
-                    echo "<script>
-                    alert('welcome! $FullName');
-                    window.location.href='../index1_home.php';
-                    </script>";
-                    break;
-
-                    # teacher-active
-                    case ($status == "teacher-active"):
-                        break;
-
-                    # student-active
-                    case ($status == "student-active"):
-                        break;
-                    
-                    # parent-active
-                    case ($status == "parent-active"):
-                        break;
-                    
-                    # passive accounts
-                    case (
-                        $status == "admin-passive" ||
-                        $status == "teacher-passive" ||
-                        $status == "student-passive" ||
-                        $status == "parent-passive"):
-                        echo "<script>
-                        alert('Sorry! Your account is not active yet. <br>
-                        Please ask to administrator.');
-                        window.history.back();
-                        </script>";
-                        break;
-                }
-            break;*/
-
-        #fail
+        #------fail------
         case ($resultCheck < 1):
             echo "<script>
             alert('Your input(s) is(are) wrong');
@@ -93,9 +45,38 @@ if(isset($_POST['login-submit'])){
             </script>"; 
             break;
 
-        #success
-        case ($resultCheck > 0):
-            echo $status;
+        #-----success-----
+        # admin-active
+        case ($status == "admin-active"):
+        echo "<script>
+        alert('welcome! $FullName');
+        window.location.href='../index1_home.php';
+        </script>";
+        break;
+
+        # teacher-active
+        case ($status == "teacher-active"):
+            break;
+
+        # student-active
+        case ($status == "student-active"):
+            break;
+        
+        # parent-active
+        case ($status == "parent-active"):
+            break;
+        
+        # passive accounts
+        case (
+            $status == "admin-passive" ||
+            $status == "teacher-passive" ||
+            $status == "student-passive" ||
+            $status == "parent-passive"):
+            echo "<script>
+            alert('Sorry! Your account is not active yet. <br>
+            Please ask to administrator.');
+            window.history.back();
+            </script>";
             break;
 
         default:
