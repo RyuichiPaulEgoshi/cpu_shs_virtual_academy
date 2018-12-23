@@ -44,10 +44,11 @@ if(isset($_POST['login-submit'])){
             </script>";
             break;
         
+        /*
         #success
         case ($reultCheck = 1):
                 echo 'Hello world'; 
-                /*switch (true) {
+                switch (true) {
                     # admin-active
                     case ($status == "admin-active"):
                     echo "<script>
@@ -80,11 +81,12 @@ if(isset($_POST['login-submit'])){
                         window.history.back();
                         </script>";
                         break;
-                }*/
-            break;
+                }
+            break;*/
 
-        #error
+        #test
         default:
+                echo '$status';
             break;
     }
 
