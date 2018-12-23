@@ -85,9 +85,24 @@ if(isset($_POST['login-submit'])){
                 }
             break;*/
 
+        #fail
+        case ($resultCheck < 1):
+            echo "<script>
+            alert('Your input(s) is(are) wrong');
+            window.history.back();
+            </script>"; 
+            break;
+
         #success
+        case ($resultCheck > 0):
+            echo $status;
+            break;
+
         default:
-                echo $status;
+            echo "<script>
+            alert('Server Error!');
+            window.history.back();
+            </script>";
             break;
     }
 
