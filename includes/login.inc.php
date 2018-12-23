@@ -35,6 +35,7 @@ if(isset($_POST['login-submit'])){
             </script>";
             break;
         
+        /*
         #check user name and password
         #if name / password is not exist in database
         case ($reultCheck < 1):
@@ -44,7 +45,7 @@ if(isset($_POST['login-submit'])){
             </script>";
             break;
         
-        /*
+        
         #success
         case ($reultCheck = 1):
                 echo 'Hello world'; 
@@ -84,9 +85,9 @@ if(isset($_POST['login-submit'])){
                 }
             break;*/
 
-        #test
+        #success
         default:
-                echo '$status';
+                echo $status;
             break;
     }
 
