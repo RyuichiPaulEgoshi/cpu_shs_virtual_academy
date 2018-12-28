@@ -25,9 +25,6 @@ if(isset($_POST['login-submit'])){
     $status = $row['status_name'];
     $FullName = $row['Name'];
 
-    #paste to home page
-    $_SESSION['u_id'] = $row['_user_id'];
-
     switch (true) {
 
         #check empty
@@ -55,29 +52,46 @@ if(isset($_POST['login-submit'])){
         alert('welcome! $FullName');
         window.location.href='../index1_home.php';
         </script>";
-        break;
+        $_SESSION['u_id'] = $row['_user_id'];
+            break;
 
         # teacher-active
         case ($status == "teacher-active"):
+        echo "<script>
+        alert('welcome! $FullName');
+        window.location.href='../index1_home.php';
+        </script>";
+        $_SESSION['u_id'] = $row['_user_id'];
             break;
 
         # student-active
         case ($status == "student-active"):
+        echo "<script>
+        alert('welcome! $FullName');
+        window.location.href='../index1_home.php';
+        </script>";
+        $_SESSION['u_id'] = $row['_user_id'];
             break;
         
         # parent-active
         case ($status == "parent-active"):
+        echo "<script>
+        alert('welcome! $FullName');
+        window.location.href='../index1_home.php';
+        </script>";
+        $_SESSION['u_id'] = $row['_user_id'];
             break;
         
         # passive accounts
         case (
-            $status == "admin-passive" ||
-            $status == "teacher-passive" ||
-            $status == "student-passive" ||
-            $status == "parent-passive"):
+            ($status == "admin-passive") ||
+            ($status == "teacher-passive") ||
+            ($status == "student-passive") ||
+            ($status == "parent-passive")
+            ):
             echo "<script>
             alert('Sorry! Your account is not active yet. <br>
-            Please ask to administrator.');
+            Please ask to admin.');
             window.history.back();
             </script>";
             break;

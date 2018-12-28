@@ -1,50 +1,95 @@
-<!--Left Navigation Bars-->
+<?php
+
+session_start();
+
+    include 'includes/db.inc.php';
+
+    
+
+    $sql = "SELECT acc_omm, acc_href, acc_icon FROM _access WHERE acc_par = 1";
+    $result = mysqli_query($conn, $sql);
+    while($row = mysqli_fetch_array($result)):;
+
+?>
+<!--Main Navigation Bars-->
 <div class="nav-container">
     <ul>
-        <li onmousemove="ShowHomNav()"><a href="index1_home.php"><i class="material-icons">home</i></a></li>
-        <li onmousemove="ShowAccNav()"><a href="index2_account.php"><i class="material-icons">person</i></a></li>
-        <li onmousemove="ShowSchNav()"><a href="index3_class.php"><i class="material-icons">school</i></a></li>
-        <li onmousemove="ShowResNav()"><a href="index5_transaction.php"><i class="material-icons">compare_arrows</i></a></li>
-        <li onmousemove="ShowSetNav()"><a href="index6_settng.php"><i class="material-icons">settings</i></a></li>
-        <li id="down-item"><a href="index7_help.php"><i class="material-icons">help</i></a></li>
+        <li onmousemove="<?php echo $row[0]; ?>"><a href="<?php echo $row[1]; ?>"><i class="material-icons"><?php echo $row[2]; ?></i></a></li>
     </ul>
 </div>
+<?php
+    endwhile;
+?>
+
 <!--Sub Navigation Bars-->
-<div id="home-nav" class="home-nav">
+
+<!--Sub 1 Home-->
+<div id="nav1" class="nav1">
     <h2>HOME</h2>
     <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
-<div id="acc-nav" class="acc-nav">
-    <h2>ADMIN</h2>
-    <h1>Ryuichi Paul Egoshi</h1>
-    <a href="#"><img src="pics/_ex_profile_pic.jpg"></a>
+
+<!--Sub 2 Account-->
+<?php
+    include 'includes/db.inc.php';
+?>
+<div id="nav2" class="nav2">
+    <h2>ACCOUNT</h2>
+    <h1></h1>
+    <a href="3Account/2.1viewacc.php"><img src=""></a>
+    <?php
+        include 'includes/db.inc.php';
+
+        $sql2 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 3";
+        $result2 = mysqli_query($conn, $sql2);
+        while($row2 = mysqli_fetch_array($result2)):;
+    ?>
     <ul>
-        <li><a href="#"><i class="material-icons">person</i>View Your Account</a></li>
-        <li><a href="#"><i class="material-icons">edit</i>Edit Your Account</a></li>
-        <li><a href="#"><i class="material-icons">people</i>Student's Acc. List</a></li>
-        <li><a href="#"><i class="material-icons">people</i>Teacher's Acc. List</a></li>
-        <li><a href="#"><i class="material-icons">person_add</i>Accept Teacher's Acc.</a></li>
-        <li id="logout"><a href="#"><i class="material-icons">exit_to_app</i>Log Out</a></li>
+        <li><a href="<?php echo $row2[0]; ?>"><i class="material-icons"><?php echo $row2[1]; ?></i><?php echo $row2[2]; ?></a></li>
     </ul>
+    <?php
+        endwhile;
+    ?>
     <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
-<div id="sch-nav" class="sch-nav">
-    <h2>CLASS</h2>
+
+<!--Sub 3 Class-->
+<div id="nav3" class="nav3">
+    <?php
+        include 'includes/db.inc.php';
+
+        $sql3 = "SELECT acc_href, acc_icon, acc_name FROM _access WHERE acc_par = 4";
+        $result3 = mysqli_query($conn, $sql3);
+        while($row3 = mysqli_fetch_array($result3)):;
+    ?>
     <ul>
-        <li><a href="#"><i class="material-icons">format_list_bulleted</i>class catalog</a></li>
+        <li><a href="<?php echo $row3[0]; ?>"><i class="material-icons"><?php echo $row3[1]; ?></i><?php echo $row3[2]; ?></a></li>
     </ul>
+    <?php
+        endwhile;
+    ?>
     <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
-<div id="res-nav" class="res-nav">
+
+<!--Sub 4 Resources-->
+<div id="nav4" class="nav4">
+    <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
+</div>
+
+<!--Sub 5 Transaction-->
+<div id="nav5" class="nav5">
     <h2>TRANSACTIONS</h2>
-    <ul>
-        <li><a href="#"><i class="material-icons">person</i>accounts transaction</a></li>
-        <li><a href="#"><i class="material-icons">school</i>classes transaction</a></li>
-        <li><a href="#"><i class="material-icons">folder</i>resources transaction</a></li>
-    </ul>
     <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
-<div id="set-nav" class="set-nav">
+
+<!--Sub 6 Settings-->
+<div id="nav6" class="nav6">
     <h2>SETTINGS</h2>
-    <i class="material-icons" id="closeNav" onclick="CloseNav()">backspace</i>
+    <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
+</div>
+
+<!--Sub 7 Help-->
+<div id="nav7" class="nav7">
+    <h2>HELP</h2>
+    <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
