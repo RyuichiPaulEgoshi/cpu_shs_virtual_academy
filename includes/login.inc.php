@@ -9,7 +9,7 @@ if(isset($_POST['login-submit'])){
     $uname = mysqli_real_escape_string($conn, $_POST['uname']);
     $upass = mysqli_real_escape_string($conn, $_POST['upass']);
 
-    $sql = "SELECT  _user.user_sid, CONCAT(_user.user_Fname, ' ', _user.user_Lname) AS Name, _user.user_password, _status.status_name 
+    $sql = "SELECT  _user.user_id, _user.user_sid, CONCAT(_user.user_Fname, ' ', _user.user_Lname) AS Name, _user.user_password, _status.status_name 
     FROM _user
     INNER JOIN _status
     ON _user.status_id_fk = _status.status_id
@@ -52,7 +52,7 @@ if(isset($_POST['login-submit'])){
         alert('welcome! $FullName');
         window.location.href='../index1_home.php';
         </script>";
-        $_SESSION['u_id'] = $row['_user_id'];
+        $_SESSION['u_id'] = $row['user_id'];
             break;
 
         # teacher-active
@@ -61,7 +61,7 @@ if(isset($_POST['login-submit'])){
         alert('welcome! $FullName');
         window.location.href='../index1_home.php';
         </script>";
-        $_SESSION['u_id'] = $row['_user_id'];
+        $_SESSION['u_id'] = $row['user_id'];
             break;
 
         # student-active
@@ -70,7 +70,7 @@ if(isset($_POST['login-submit'])){
         alert('welcome! $FullName');
         window.location.href='../index1_home.php';
         </script>";
-        $_SESSION['u_id'] = $row['_user_id'];
+        $_SESSION['u_id'] = $row['user_id'];
             break;
         
         # parent-active
@@ -79,7 +79,7 @@ if(isset($_POST['login-submit'])){
         alert('welcome! $FullName');
         window.location.href='../index1_home.php';
         </script>";
-        $_SESSION['u_id'] = $row['_user_id'];
+        $_SESSION['u_id'] = $row['user_id'];
             break;
         
         # passive accounts
