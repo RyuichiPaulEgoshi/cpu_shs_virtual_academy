@@ -83,15 +83,12 @@ if(isset($_POST['login-submit'])){
             break;
         
         # passive accounts
-        case (
-            ($status == "admin-passive") ||
-            ($status == "teacher-passive") ||
-            ($status == "student-passive") ||
-            ($status == "parent-passive")
-            ):
+        case ($status == "admin-passive" ||
+         $status == "teacher-passive" ||
+         $status == "student-passive" ||
+         $status == "parent-passive"):
             echo "<script>
-            alert('Sorry! Your account is not active yet. <br>
-            Please ask to admin.');
+            alert('Your account is not active. Pls ask admin for active your account');
             window.history.back();
             </script>";
             break;
@@ -107,7 +104,7 @@ if(isset($_POST['login-submit'])){
 } else{
     echo "<script>
     alert('Server Error!');
-    window.history.back();
+    windw.history.back();
     </script>";
     exit();
 }
