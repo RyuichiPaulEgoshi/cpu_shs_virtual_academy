@@ -6,9 +6,7 @@ session_start();
 
     $user_id = $_SESSION['u_id'];
 
-    echo $user_id;
-
-    $sql = "SELECT acc_omm, acc_href, acc_icon FROM _allow_access
+    $sql = "SELECT acc_omm, acc_href, acc_icon, acc_name FROM _allow_access
             INNER JOIN _status
             ON _allow_access.status_id_fk = _status.status_id
             INNER JOIN _user
@@ -26,7 +24,7 @@ session_start();
 <!--Main Navigation Bars-->
 <div class="nav-container">
     <ul>
-        <li onmousemove="<?php echo $row[0]; ?>"><a href="<?php echo $row[1]; ?>"><i class="material-icons"><?php echo $row[2]; ?></i></a></li>
+        <li onmousemove="<?php echo $row[0]; ?>"><a href="<?php echo $row[1]; ?>"><i class="material-icons"><?php echo $row[2]; ?></i><?php echo $row[3]; ?></a></li>
     </ul>
 </div>
 <?php
