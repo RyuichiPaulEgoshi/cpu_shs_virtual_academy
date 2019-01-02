@@ -163,3 +163,9 @@ session_start();
     <h2>HELP</h2>
     <i class="material-icons" id="closeNav"  onclick="CloseNav()">backspace</i>
 </div>
+
+<!--Sub 8 Class-->
+<div id="nav8" class="nav8">
+    <h2>CLASS</h2>
+    <i class="material-icons" id="closeNav" onclick="CloseNav()">backspace</i>
+</div>
