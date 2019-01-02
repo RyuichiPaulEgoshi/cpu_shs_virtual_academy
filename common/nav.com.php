@@ -17,16 +17,19 @@ session_start();
             _user.user_id  = '$user_id'
             AND
             _access.acc_par = '1';";
+
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_array($result)):;
 
 ?>
+
 <!--Main Navigation Bars-->
 <div class="nav-container">
     <ul>
         <li onmousemove="<?php echo $row[0]; ?>"><a href="<?php echo $row[1]; ?>"><i class="material-icons"><?php echo $row[2]; ?></i></a></li>
     </ul>
 </div>
+
 <?php
     endwhile;
 ?>
