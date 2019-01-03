@@ -169,3 +169,33 @@ session_start();
     <h2>CLASS</h2>
     <i class="material-icons" id="closeNav" onclick="CloseNav()">backspace</i>
 </div>
+
+<!--Sub 9 Account-->
+<div id="nav9" class="nav9">
+    <h3>ACCOUNT</h3>
+    <i class="material-icons" id="closenav" onclick="CLoseNav()">backspace</i>
+</div>
+
+<!--Sub 10 Account 2-->
+<div id="nav10" class="nav10">
+    <h3>ACCOUNT2</h3>
+    <i class="material-icons" id="closenav" onclick="closeNav()">backspace</i>
+</div>
+
+<!--Sub 11 Account 3-->
+<div id="nav11" class="nav11">
+   <h2>ACOUNT3</h2>
+   <i class="material-icons" id="closenav" onclick="closeNav()">backspace</i>    
+</div>
+
+<!--Sub 12 Account 4-->
+<div id="nav12" class="nav12">
+    <h2>ACCOUNT4</h2>
+    <i class="material-icons" id="closenav" onclick="closeNav()">backspace</i>
+</div>
+
+<!--Sub 13 Account 5-->
+<div id="nav13" class="nav13">
+    <h2>ACCOUNT5</h2>
+    <i class="material-icons" id="closenav" onclick="closeNav()">backspace</i>
+</div>
